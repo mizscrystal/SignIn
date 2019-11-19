@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(240, 233, 240);
+            text-align: center;
+        }
+        .sign{
+            border-radius: 5px;
+            background-color:rgb(221, 220, 218);
+            margin: auto;
+            border: 1px solid rgb(250, 247, 244);
+            height: 600px;
+            width: 600px;
+        }
+        @media screen and (max-width: 768px) {
+          .sign{
+              width: 500px;
+              height: 500px;
+          }  
+        }
+        .main{
+            padding-top: 20px;
+            position: relative;
+            margin: 40px auto auto auto;
+            width: 500px;
+            height: 520px;
+            background-color: whitesmoke;
+            border-collapse: collapse; 
+            border-radius: 10px; 
+        }
+        @media screen and (max-width: 768px) {
+          .main{
+              width: 500px;
+              height: 500px;
+          }  
+        }
+          #love{ 
+            margin: auto;
+            border: 1.5px solid #ddd; 
+            background-color: inherit;
+            width: 92%;
+            height: 490px;  
+        } 
+        #in{
+            float: left;
+            width: 230px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(88, 85, 85);
+            background-color: inherit;
+            border: 1px solid rgb(201, 199, 199);
+            margin-bottom: 20px;
+        }
+        #in:hover{
+            background-color: rgb(207, 205, 205);
+        }
+        #up{
+            float:right;
+            font-size: 20px;
+            width: 230px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(88, 85, 85);
+            background-color: inherit;
+            border: 1px solid rgb(201, 199, 199);
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+          .up{
+              width: 20px;
+              height: 20px;
+          }  
+        }
+        #up:hover{
+            background-color: rgb(207, 205, 205);
+        }
+       .input-container { 
+        display: flex;
+        margin-left: 30px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .icon {
+        border-radius: 5px  0 0 5px;
+        margin-top:10px;
+        padding: 10px;
+        background: rgb(206, 207, 207);
+        color: white;
+        min-width: 30px;
+        text-align: center;
+    }
+    .input-field {
+        border: 1px solid rgb(202, 199, 201);
+        border-radius: 0 5px 5px 0;
+        margin-top:10px;
+        width: 325px;
+        padding: 10px;
+    }
+         #signinB{
+            width: 400px;
+            margin-right: 15px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(4, 173, 4);
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 30px;
+            border: 1px solid rgb(202, 199, 201);  
+         }  
+       #google{
+           float: left;
+           width: 170px;
+           height:35px;
+           margin-left: 35px;
+           background-color: rgb(199, 5, 5);
+           color: white;
+           font-size: 20px;
+           border: 1px solid rgb(199, 5, 5);
+           border-radius: 5px;
+       }
+       #facebook{
+           float:right;
+           width: 170px;
+           height:35px;
+           margin-right: 35px;
+           background-color: rgb(12, 12, 121);
+           color: white;
+           font-size: 20px;
+           border: 1px solid rgb(12, 12, 121);
+           border-radius: 5px;
+       }
+        #create{
+            margin-top: 80px;
+            color: rgb(26, 136, 26);
+            font-size: 17px;
+            font-weight: 800;
+        }
+        #agree{
+            font-size: 13px;
+            color: grey;
+            font-weight: 600;
+        }
+        #agree span{
+            color: rgb(26, 136, 26);
+        }
+        .form-check-input{
+            float: left;
+            margin-top: 17px;
+        }
+        #pssword{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #forget{
+            float: right;
+            margin-right: 30px;
+            margin-top: 17px;
+        }
+    </style>
+    <title>Sign-In</title>
+</head>
+<body>
+    <h1>Project Three</h1>
+    <h3>Sign-In Page</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sign">
+                        <!-- <button aria-label="Close" onclick="myDialog.close()">X</button> -->
+                 <div class="main">
+                        <div id="love"> 
+                            <button id="in">Sign In</button>
+                            <button id="up">Sign Up</button> 
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="text" placeholder="Username or email" name="usrnm">
+                              </div> 
+                              <div class="input-container">
+                                <i class="fa fa-key icon inputed"></i>
+                                <input class="input-field" type="text" placeholder="Password" name="usrnm">
+                              </div>          
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" name="email" id="pssword" value="checkedValue" checked>
+                   <span class="form-check-input">Remember me</span> <span id="forget">Forgot Password</span> 
+                  </label>  
+                </div>
+                <button id="signinB">Sign In</button> 
+                <p>or</p>
+                <button id="google" class="fa fa-google icon">Google</button> 
+                <button id="facebook" class="fa fa-facebook icon">Facebook</button> 
+                <h3 id="create">Why Create an Account?</h3>
+                <p id="agree">By creating this account, you agree to our<span> privacy policy</span> &<span> cookie policy.</span></p>  
+              </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>     
+</body>
+</html>
